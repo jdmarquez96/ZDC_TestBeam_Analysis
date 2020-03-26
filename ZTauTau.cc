@@ -1,25 +1,24 @@
-#include "TreeReader.h"
-#include "WeightCalculator.h"
+#include "ZTauTau.h"
 #include <string>
 #include <ostream>
 
-int main(int argc, char** argv) {
+int main(int argc, char* argv[]) {
     using namespace std;
     
     
-    std::string out = *(argv + 1);
+    std::string out = argv[1];
     
     cout << "\n\n\n OUTPUT NAME IS:    " << out << endl;     //PRINTING THE OUTPUT File name
     TFile *fout = TFile::Open(out.c_str(), "RECREATE");
     
-    std::string input = *(argv + 2);
+    std::string input = argv[2];
     cout << "\n\n\n InPUT NAME IS:    " << input << endl;     //PRINTING THE Input File name
     TFile * myFile = TFile::Open(input.c_str());
 
     
     
     
-    TH1F *    ChargeSum = new TH1F ("ChargeSum","ChargeSum", 300, 0, 300);
+    TH1F *    ChargeSum = new TH1F ("ChargeSum","ChargeSum", 300, 0, 1500);
 
     
     
