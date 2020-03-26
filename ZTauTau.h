@@ -8,6 +8,15 @@
 #include <utility>
 #include <iostream>
 #include <map>
+#include "TH1F.h"
+#include "TH2F.h"
+#include "TTree.h"
+#include "TFile.h"
+#include "TF1.h"
+#include "TSystem.h"
+#include "TMath.h" //M_PI is in TMath
+#include "TRandom3.h"
+#include <TLorentzVector.h>
 using namespace std;
 
 
