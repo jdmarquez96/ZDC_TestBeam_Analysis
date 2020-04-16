@@ -1,26 +1,17 @@
 # ZDC_TestBeam_Analysis
 # Instructions for Running on LxPlus with CMSSW
 
-log on to Lxplus with username and passwork
+log on to Lxplus with username and password
 
 If using Windows use putty
 
-input
+Git clone respository ( you should first fork repository so you can edit code easily)
 
-source /cvmfs/cms.cern.ch/cmsset_default.sh
-export SCRAM_ARCH=slc7_amd64_gcc700
+set up enviorment via:
 
+. setenv.sh
 
-get CMSSW by input:
-cmsrel CMSSW_10_6_4
-
-cd CMSSW_10_6_4/src
-
-cmsenv
-
-git clone this repository in src directory
-
-create executable by input:
+Make executable via:
 
 ./Make.sh ZDC_ANALYZER.cc
 
