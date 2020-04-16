@@ -1,5 +1,5 @@
 #!/bin/bash
-source /cvmfs/cms.cern.ch/cmsset_default.sh export SCRAM_ARCH=slc7_amd64_gcc700
+source /cvmfs/cms.cern.ch/cmsset_default.sh 
 
 alias cmake='/cvmfs/sft.cern.ch/lcg/contrib/CMake/3.13.4/Linux-x86_64/bin/cmake'
 
